@@ -1,23 +1,23 @@
 {
-  "name": "hubot",
-  "version": "0.0.0",
+  "name": "idehub-hubot",
+  "version": "1.0.0",
   "private": true,
   "author": "-",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "coffee-script": "^1.9.3",
-    "hubot": "^2.18.0",
-    "hubot-azure-scripts": "^0.1.6",
-    "hubot-diagnostics": "0.0.1",
-    "hubot-google-images": "^0.1.5",
-    "hubot-google-translate": "^0.2.0",
-    "hubot-help": "^0.1.1",
-    "hubot-maps": "0.0.2",
-    "hubot-pugme": "^0.1.0",
-    "hubot-rules": "^0.1.1",
-    "hubot-scripts": "^2.16.1",
-    "hubot-shipit": "^0.2.0",
-    "hubot-slack": "^3.3.0"
+    "coffee-script": "*",
+    "hubot": "*",
+    "hubot-azure-scripts": "*",
+    "hubot-diagnostics": "*",
+    "hubot-google-images": "^0.2.6",
+    "hubot-google-translate": "*",
+    "hubot-help": "^0.2.0",
+    "hubot-maps": "*",
+    "hubot-pugme": "*",
+    "hubot-rules": "*",
+    "hubot-scripts": "*",
+    "hubot-shipit": "*",
+    "hubot-slack": "*"
   },
   "engines": {
     "node": "0.12.x"
