@@ -1,23 +1,25 @@
 {
-  "name": "idehub-hubot",
+  "name": "ernie",
   "version": "1.0.0",
   "private": true,
   "author": "-",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "coffee-script": "*",
-    "hubot": "*",
-    "hubot-azure-scripts": "*",
-    "hubot-diagnostics": "*",
+    "coffee-script": "^1.10.0",
+    "hubot": "~2.11.0",
+    "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.6",
-    "hubot-google-translate": "*",
+    "hubot-google-translate": "^0.2.0",
     "hubot-help": "^0.2.0",
-    "hubot-maps": "*",
-    "hubot-pugme": "*",
-    "hubot-rules": "*",
-    "hubot-scripts": "*",
-    "hubot-shipit": "*",
-    "hubot-slack": "*"
+    "hubot-heroku-keepalive": "^1.0.2",
+    "hubot-maps": "0.0.2",
+    "hubot-pugme": "^0.1.0",
+    "hubot-redis-brain": "0.0.3",
+    "hubot-rules": "^0.1.1",
+    "hubot-scripts": "^2.17.2",
+    "hubot-shipit": "^0.2.0",
+    "hubot-slack": "^4.0.5",
+    "superagent": "^2.2.0"
   },
   "engines": {
     "node": "6.3.0"
