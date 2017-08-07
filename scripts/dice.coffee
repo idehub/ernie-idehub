@@ -16,4 +16,4 @@ module.exports = (robot) ->
     n = res.match[2]
     res.send '' + [0...m].reduce (s) ->
       s + Math.floor(Math.random() * n) + 1
-, 0
+    , 0
