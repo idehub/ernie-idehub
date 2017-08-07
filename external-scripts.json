@@ -8,5 +8,6 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-redis-brain",
-  "hubot-heroku-keepalive"
+  "hubot-heroku-keepalive",
+  "hubot-standup-alarm"
 ]
