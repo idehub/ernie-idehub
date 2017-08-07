@@ -6,6 +6,8 @@
   "description": "A simple helpful robot for your Company",
   "dependencies": {
     "coffee-script": "^1.10.0",
+    "crypto": "0.0.3",
+    "feed-read": "0.0.1",
     "hubot": "~2.11.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.6",
