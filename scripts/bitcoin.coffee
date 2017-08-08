@@ -5,7 +5,7 @@
 #   None
 #
 # Commands:
-#   hubot <cryptocurrency> - returns average USD price for symbol t<cryptocurrency>USD from Bitfinex
+#   hubot crypto <cryptocurrency> - returns average USD price for symbol t<cryptocurrency>USD from Bitfinex
 #
 # Author:
 #   Nikolai
