@@ -5,14 +5,14 @@
 #   None
 #
 # Commands:
-#   hubot <currency> - returns average price for symbol t<currency>USD from Bitfinex
+#   hubot <cryptocurrency> - returns average USD price for symbol t<cryptocurrency>USD from Bitfinex
 #
 # Author:
 #   Nikolai
 
 module.exports = (robot) ->
   robot.respond /crypto(?:\s)?(.*)?/i, (msg) ->
-    currency = res.match[1].toUpperCase();
+    currency = if (msg.match[1]) then msg.match[1].trim().toUpperCase() else 'BTC'
     msg
       .http("https://api.bitfinex.com/v2/calc/trade/avg?symbol=t#{currency}USD&amount=1")
       .post() (err, res, body) ->
