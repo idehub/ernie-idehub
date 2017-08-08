@@ -9,6 +9,7 @@
     "crypto": "0.0.3",
     "feed-read": "0.0.1",
     "hubot": "~2.11.0",
+    "hubot-bitcoin": "^1.0.3",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.6",
     "hubot-google-translate": "^0.2.0",
