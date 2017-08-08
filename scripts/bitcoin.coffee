@@ -12,9 +12,9 @@
 
 module.exports = (robot) ->
   robot.respond /crypto(?:\s)?(.*)?/i, (msg) ->
-    currency = if (msg.match[1]) then msg.match[1].trim().toUpperCase() else 'BTC'
-    symbol = "t#{currency}USD"
+    symbol = if (msg.match[1]) then msg.match[1].trim().toUpperCase() else 'btcusd'
     msg
-      .http("https://api.bitfinex.com/v2/calc/trade/avg?symbol=t#{currency}USD&amount=1")
-      .post() (err, res, body) ->
-        msg.send "Current average for #{symbol}: #{JSON.parse(body)[0]}"
+      .http("https://api.bitfinex.com/v1/pubticker/#{symbol}")
+      .get() (err, res, body) ->
+        data = JSON.parse(body);
+        msg.send "#{symbol}: #{data.last_price} (High: #{data.high} | Low: #{data.high})"
