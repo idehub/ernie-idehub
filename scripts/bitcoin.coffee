@@ -15,5 +15,4 @@ module.exports = (robot) ->
     msg
       .http("https://api.bitfinex.com/v2/calc/trade/avg")
       .post() (err, res, body) ->
-        var values = JSON.parse(body)
-        msg.send "Current average for tBTCUSD: #{values[0]}"
+        msg.send "Current average for tBTCUSD: #{JSON.parse(body)[0]}"
