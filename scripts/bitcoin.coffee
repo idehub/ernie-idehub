@@ -13,7 +13,7 @@
 
 module.exports = (robot) ->
   robot.respond /crypto price(.*)?/i, (msg) ->
-    symbol = if (msg.match[1]) then msg.match[1].trim().toUpperCase() else 'btcusd'
+    symbol = if (msg.match[1]) then msg.match[1].trim().toUpperCase() else 'BTCUSD'
     msg
       .http("https://api.bitfinex.com/v1/pubticker/#{symbol}")
       .get() (err, res, body) ->
