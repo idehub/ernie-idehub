@@ -33,4 +33,5 @@ module.exports = (robot) ->
     msg
       .http("https://api.bitfinex.com/v2/calc/trade/avg?symbol=t#{fromC}#{toC}&amount=#{amount}")
       .post() (err, res, body) ->
-        msg.send "Current average for tBTCUSD: #{JSON.parse(body)[0]}"
+        toPay = amount * JSON.parse(body)[0]
+        msg.send "To buy #{amount} #{fromC} you would have to pay #{toPay} #{toC}"
